@@ -1,0 +1,14 @@
+/** @format */
+
+.white {
+  background-color: whitesmoke;
+  height: 600px;
+  width: 100px;
+}
+.black {
+  background-color: #333;
+  height: 400px;
+  width: 100px;
+  position: relative;
+  bottom: 100px;
+}
