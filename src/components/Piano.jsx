@@ -1,10 +1,15 @@
 /** @format */
 
-import React from "react";
+import React, { useState } from "react";
 import "./piano.css";
 import * as Tone from "tone";
 
 export default function Piano() {
+  const [instrument, setInstrument] = useState(true);
+  function stop() {
+    window.location.reload(false);
+  }
+  //piano functions
   function toneC() {
     const c = new Tone.Synth().toDestination();
     c.triggerAttack("C4", Tone.context.currentTime);
@@ -79,45 +84,125 @@ export default function Piano() {
     Tone.start();
   }
 
+  //synth functions
+  function toneCSynth() {
+    const c = new Tone.FMSynth(Tone.Synth).toDestination();
+    c.triggerAttack("C4", Tone.context.currentTime);
+    c.triggerRelease(Tone.context.currentTime + 0.25);
+    Tone.start();
+  }
+  function toneCsSynth() {
+    const c = new Tone.FMSynth(Tone.Synth).toDestination();
+    c.triggerAttack("C#4", Tone.context.currentTime);
+    c.triggerRelease(Tone.context.currentTime + 0.25);
+    Tone.start();
+  }
+  function toneDSynth() {
+    const c = new Tone.FMSynth(Tone.Synth).toDestination();
+    c.triggerAttack("D4", Tone.context.currentTime);
+    c.triggerRelease(Tone.context.currentTime + 0.25);
+    Tone.start();
+  }
+  function toneDsSynth() {
+    const c = new Tone.FMSynth(Tone.Synth).toDestination();
+    c.triggerAttack("D#4", Tone.context.currentTime);
+    c.triggerRelease(Tone.context.currentTime + 0.25);
+    Tone.start();
+  }
+  function toneESynth() {
+    const c = new Tone.FMSynth(Tone.Synth).toDestination();
+    c.triggerAttack("E4", Tone.context.currentTime);
+    c.triggerRelease(Tone.context.currentTime + 0.25);
+    Tone.start();
+  }
+  function toneFSynth() {
+    const c = new Tone.FMSynth(Tone.Synth).toDestination();
+    c.triggerAttack("F4", Tone.context.currentTime);
+    c.triggerRelease(Tone.context.currentTime + 0.25);
+    Tone.start();
+  }
+  function toneFsSynth() {
+    const c = new Tone.FMSynth(Tone.Synth).toDestination();
+    c.triggerAttack("F#4", Tone.context.currentTime);
+    c.triggerRelease(Tone.context.currentTime + 0.25);
+    Tone.start();
+  }
+  function toneGSynth() {
+    const c = new Tone.FMSynth(Tone.Synth).toDestination();
+    c.triggerAttack("G4", Tone.context.currentTime);
+    c.triggerRelease(Tone.context.currentTime + 0.25);
+    Tone.start();
+  }
+  function toneGsSynth() {
+    const c = new Tone.FMSynth(Tone.Synth).toDestination();
+    c.triggerAttack("G#4", Tone.context.currentTime);
+    c.triggerRelease(Tone.context.currentTime + 0.25);
+    Tone.start();
+  }
+  function toneASynth() {
+    const c = new Tone.FMSynth(Tone.Synth).toDestination();
+    c.triggerAttack("A4", Tone.context.currentTime);
+    c.triggerRelease(Tone.context.currentTime + 0.25);
+    Tone.start();
+  }
+  function toneAsSynth() {
+    const c = new Tone.FMSynth(Tone.Synth).toDestination();
+    c.triggerAttack("A#4", Tone.context.currentTime);
+    c.triggerRelease(Tone.context.currentTime + 0.25);
+    Tone.start();
+  }
+  function toneBSynth() {
+    const c = new Tone.FMSynth(Tone.Synth).toDestination();
+    c.triggerAttack("B4", Tone.context.currentTime);
+    c.triggerRelease(Tone.context.currentTime + 0.25);
+    Tone.start();
+  }
   return (
     <div>
-      <button className="white" onClick={toneC}>
-        C
-      </button>
-      <button className="black" onClick={toneCs}>
-        C#
-      </button>
-      <button className="white" onClick={toneD}>
-        D
-      </button>
-      <button className="black" onClick={toneDs}>
-        D#
-      </button>
-      <button className="white" onClick={toneE}>
-        E
-      </button>
-      <button className="white" onClick={toneF}>
-        F
-      </button>
-      <button className="black" onClick={toneFs}>
-        F#
-      </button>
-      <button className="white" onClick={toneG}>
-        {" "}
-        G
-      </button>
-      <button className="black" onClick={toneGs}>
-        G#
-      </button>
-      <button className="white" onClick={toneA}>
-        A
-      </button>
-      <button className="black" onClick={toneAs}>
-        A#
-      </button>
-      <button className="white" onClick={toneB}>
-        B
-      </button>
+      <button onClick={stop}>stop</button>
+      <select onChange={() => setInstrument(false)}>
+        <option>piano</option>
+        <option>synth</option>
+      </select>
+      <div className="piano">
+        <button className="white" onClick={instrument ? toneC : toneCSynth}>
+          C
+        </button>
+        <button className="black" onClick={instrument ? toneCs : toneCsSynth}>
+          C#
+        </button>
+        <button className="white" onClick={instrument ? toneD : toneDSynth}>
+          D
+        </button>
+        <button className="black" onClick={instrument ? toneDs : toneDsSynth}>
+          D#
+        </button>
+        <button className="white" onClick={instrument ? toneE : toneESynth}>
+          E
+        </button>
+        <button className="white" onClick={instrument ? toneF : toneFSynth}>
+          F
+        </button>
+        <button className="black" onClick={instrument ? toneFs : toneFsSynth}>
+          F#
+        </button>
+        <button className="white" onClick={instrument ? toneG : toneGSynth}>
+          {" "}
+          G
+        </button>
+        <button className="black" onClick={instrument ? toneGs : toneGsSynth}>
+          G#
+        </button>
+        <button className="white" onClick={instrument ? toneA : toneASynth}>
+          A
+        </button>
+        <button className="black" onClick={instrument ? toneAs : toneAsSynth}>
+          A#
+        </button>
+        <button className="white" onClick={instrument ? toneB : toneBSynth}>
+          B
+        </button>
+      </div>
     </div>
   );
 }
