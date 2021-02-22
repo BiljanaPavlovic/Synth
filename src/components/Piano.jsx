@@ -159,11 +159,23 @@ export default function Piano() {
   }
   return (
     <div>
+      <h2>Piano</h2>
       <button onClick={stop}>stop</button>
-      <select onChange={() => setInstrument(false)}>
-        <option>piano</option>
-        <option>synth</option>
-      </select>
+
+      <button
+        onClick={() => {
+          setInstrument(true);
+        }}
+      >
+        piano
+      </button>
+      <button
+        onClick={() => {
+          setInstrument(false);
+        }}
+      >
+        Synth
+      </button>
       <div className="piano">
         <button className="white" onClick={instrument ? toneC : toneCSynth}>
           C
