@@ -1,7 +1,13 @@
 /** @format */
-
+.vehicles-div {
+  border: solid 3px turquoise;
+  border-radius: 30%;
+  background-color: #3399ff;
+  color: #ccffff;
+}
 .vehicles-btn {
   border-radius: 50%;
   padding: 10px;
   margin: 15px;
+  background-color: #006666;
 }

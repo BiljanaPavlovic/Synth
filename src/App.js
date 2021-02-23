@@ -11,12 +11,31 @@ function App() {
 
   return (
     <div className="App">
-      <h1>sintisajzer</h1>
+      <div className="small-up-div">
+        <div className='small'></div>
+        <div className='small'></div>
+        <div className='small'></div>
+        <div className='small'></div>
+        <div className='small'></div>
+        <div className='small'></div>
+
+      </div>
+      <h1>Music box</h1>
+      <div className="small-up-div" >
+        <div className='small'></div>
+        <div className='small'></div>
+        <div className='small'></div>
+        <div className='small'></div>
+        <div className='small'></div>
+        <div className='small'></div>
+      </div>
       <div className="glass">
 
         <Songs />
-        <Vehicles />
-        <Animals />
+        <div className="sounds-div">
+          <Vehicles />
+          <Animals />
+        </div>
         <Piano />
       </div>
       <div className='small'></div>

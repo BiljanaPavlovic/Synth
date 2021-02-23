@@ -162,16 +162,13 @@ export default function Piano() {
       <h2>Piano</h2>
       <button onClick={stop}>
         <img src="/Synth/img/stop.png" alt="silent emoji" />
-        stop
       </button>
-
       <button
         onClick={() => {
           setInstrument(true);
         }}
       >
         <img src="/Synth/img/betoven.png" alt="Betoven" />
-        piano
       </button>
       <button
         onClick={() => {
@@ -179,7 +176,6 @@ export default function Piano() {
         }}
       >
         <img src="/Synth/img/mocartDj.png" alt="Mocart" />
-        Synth
       </button>
       <div className="piano">
         <button className="white" onClick={instrument ? toneC : toneCSynth}>

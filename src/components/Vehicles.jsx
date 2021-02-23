@@ -29,30 +29,26 @@ export default function Vehicles() {
     car.play();
   };
   return (
-    <div>
+    <div className="vehicles-div">
       <h2>Vehicles</h2>
       <button className="vehicles-btn" onClick={ambulancePlay}>
         {" "}
         <img src="/Synth/img/vehicles/ambulance.png" alt="ambulance car" />
-        ambulance
       </button>
       <button className="vehicles-btn" onClick={firetruckPlay}>
-        <img src="/Synth/img/vehicles/firetruck.png" alt="fire truck" />{" "}
-        firetruck
+        <img src="/Synth/img/vehicles/firetruck.png" alt="fire truck" />
       </button>
       <button className="vehicles-btn" onClick={policePlay}>
-        <img src="/Synth/img/vehicles/police.png" alt="police car" /> police
+        <img src="/Synth/img/vehicles/police.png" alt="police car" />
       </button>
       <button className="vehicles-btn" onClick={motorcuclePlay}>
-        <img src="/Synth/img/vehicles/motorcucle.png" alt="motorcucle" />{" "}
-        motorcucle
+        <img src="/Synth/img/vehicles/motorcucle.png" alt="motorcucle" />
       </button>
       <button className="vehicles-btn" onClick={helicopterPlay}>
-        <img src="/Synth/img/vehicles/helicopter.png" alt="helicopter" />{" "}
-        helicopter
+        <img src="/Synth/img/vehicles/helicopter.png" alt="helicopter" />
       </button>
       <button className="vehicles-btn" onClick={carPlay}>
-        <img src="/Synth/img/vehicles/car.png" alt="car" /> car
+        <img src="/Synth/img/vehicles/car.png" alt="car" />
       </button>
     </div>
   );
