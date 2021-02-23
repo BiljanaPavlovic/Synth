@@ -160,13 +160,17 @@ export default function Piano() {
   return (
     <div>
       <h2>Piano</h2>
-      <button onClick={stop}>stop</button>
+      <button onClick={stop}>
+        <img src="/Synth/img/stop.png" alt="silent emoji" />
+        stop
+      </button>
 
       <button
         onClick={() => {
           setInstrument(true);
         }}
       >
+        <img src="/Synth/img/betoven.png" alt="Betoven" />
         piano
       </button>
       <button
@@ -174,6 +178,7 @@ export default function Piano() {
           setInstrument(false);
         }}
       >
+        <img src="/Synth/img/mocartDj.png" alt="Mocart" />
         Synth
       </button>
       <div className="piano">

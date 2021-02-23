@@ -29,18 +29,23 @@ export default function Songs() {
     <div>
       <h2>Songs</h2>
       <button className="songs-btn" onClick={sharkPlay}>
+        <img src="/Synth/img/songs/shark.png" alt="shark" />
         shark
       </button>
       <button className="songs-btn" onClick={happyPlay}>
+        <img src="/Synth/img/songs/happy.png" alt="happy" />
         happy
       </button>
       <button className="songs-btn" onClick={wheelsPlay}>
+        <img src="/Synth/img/songs/bus.png" alt="bus" />
         wheels
       </button>
       <button className="songs-btn" onClick={twinklePlay}>
+        <img src="/Synth/img/songs/star.png" alt="star" />
         twinkle
       </button>
       <button className="songs-btn" onClick={farmPlay}>
+        <img src="/Synth/img/songs/farm.png" alt="farm" />
         farm
       </button>
     </div>

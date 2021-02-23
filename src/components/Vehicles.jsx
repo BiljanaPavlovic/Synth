@@ -32,22 +32,27 @@ export default function Vehicles() {
     <div>
       <h2>Vehicles</h2>
       <button className="vehicles-btn" onClick={ambulancePlay}>
+        {" "}
+        <img src="/Synth/img/vehicles/ambulance.png" alt="ambulance car" />
         ambulance
       </button>
       <button className="vehicles-btn" onClick={firetruckPlay}>
+        <img src="/Synth/img/vehicles/firetruck.png" alt="fire truck" />{" "}
         firetruck
       </button>
       <button className="vehicles-btn" onClick={policePlay}>
-        police
+        <img src="/Synth/img/vehicles/police.png" alt="police car" /> police
       </button>
       <button className="vehicles-btn" onClick={motorcuclePlay}>
+        <img src="/Synth/img/vehicles/motorcucle.png" alt="motorcucle" />{" "}
         motorcucle
       </button>
       <button className="vehicles-btn" onClick={helicopterPlay}>
+        <img src="/Synth/img/vehicles/helicopter.png" alt="helicopter" />{" "}
         helicopter
       </button>
       <button className="vehicles-btn" onClick={carPlay}>
-        car
+        <img src="/Synth/img/vehicles/car.png" alt="car" /> car
       </button>
     </div>
   );
