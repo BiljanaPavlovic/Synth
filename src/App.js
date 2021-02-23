@@ -11,9 +11,9 @@ function App() {
 
   return (
     <div className="App">
+      <h1>sintisajzer</h1>
       <div className="glass">
 
-        <h1>sintisajzer</h1>
         <Songs />
         <Vehicles />
         <Animals />
@@ -27,6 +27,11 @@ function App() {
       <div className='larg'></div>
       <div className='larg'></div>
       <div className='larg'></div>
+      <div className='small'></div>
+      <div className='small'></div>
+      <div className='small'></div>
+      <div className='small'></div>
+      <div className='small'></div>
 
     </div>
   );
