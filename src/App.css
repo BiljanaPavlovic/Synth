@@ -6,41 +6,37 @@
   margin: auto;
   background-color: #99e6ff;
 }
+
 .glass {
   border: solid 5px blueviolet;
-  border-radius: 20%;
+  border-radius: 10%;
   width: 70%;
   margin: auto;
   padding: 30px;
-  background-color: #b380ff;
+  background-color: yellow;
 }
 .small {
   border: solid 3px #4dffff;
   background-color: #3dc8ff;
   background-image: url("https://www.transparenttextures.com/patterns/nice-snow.png");
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  margin: 10px;
+  width: 40px;
+  height: 40px;
 }
 .larg {
   border: solid 3px #4dffff;
   background-color: #0081bd;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 70px;
+  height: 70px;
   margin: 10px;
 }
 img {
   height: 100px;
   width: 100px;
 }
-.sounds-div {
-  border: solid 3px purple;
-  border-radius: 10%;
-  background-color: yellow;
-}
+
 .small-up-div {
   padding: 3vw;
   display: grid;
@@ -49,4 +45,10 @@ img {
 h1 {
   font-size: 20vh;
   color: #6600ff;
+}
+@media (max-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: auto;
+  }
 }

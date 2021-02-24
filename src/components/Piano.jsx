@@ -160,23 +160,35 @@ export default function Piano() {
   return (
     <div>
       <h2>Piano</h2>
-      <button onClick={stop}>
-        <img src="/Synth/img/stop.png" alt="silent emoji" />
-      </button>
-      <button
-        onClick={() => {
-          setInstrument(true);
-        }}
-      >
-        <img src="/Synth/img/betoven.png" alt="Betoven" />
-      </button>
-      <button
-        onClick={() => {
-          setInstrument(false);
-        }}
-      >
-        <img src="/Synth/img/mocartDj.png" alt="Mocart" />
-      </button>
+      <div className="piano-btn-div">
+        <button className="piano-btn" onClick={stop}>
+          <img src="/Synth/img/stop.png" alt="silent emoji" />
+        </button>
+        <button
+          className="piano-btn"
+          onClick={() => {
+            setInstrument(true);
+          }}
+        >
+          <img
+            className="piano-img"
+            src="/Synth/img/betoven.png"
+            alt="Betoven"
+          />
+        </button>
+        <button
+          className="piano-btn"
+          onClick={() => {
+            setInstrument(false);
+          }}
+        >
+          <img
+            className="piano-img"
+            src="/Synth/img/mocartDj.png"
+            alt="Mocart"
+          />
+        </button>
+      </div>
       <div className="piano">
         <button className="white" onClick={instrument ? toneC : toneCSynth}>
           C

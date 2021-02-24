@@ -20,3 +20,12 @@
   border-radius: 15%;
   background-color: whitesmoke;
 }
+.piano-btn {
+  border-radius: 50%;
+  padding: 10px;
+  margin: 15px;
+  background-color: peachpuff;
+}
+.piano-img {
+  border-radius: 50%;
+}

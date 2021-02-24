@@ -14,20 +14,34 @@ function App() {
       <div className="small-up-div">
         <div className='small'></div>
         <div className='small'></div>
+        <div className='larg'></div>
         <div className='small'></div>
         <div className='small'></div>
         <div className='small'></div>
+        <div className='larg'></div>
+        <div className='larg'></div>
+        <div className='small'></div>
+        <div className='small'></div>
+        <div className='larg'></div>
         <div className='small'></div>
 
       </div>
       <h1>Music box</h1>
       <div className="small-up-div" >
         <div className='small'></div>
+        <div className='larg'></div>
         <div className='small'></div>
         <div className='small'></div>
+        <div className='larg'></div>
+        <div className='small'></div>
+        <div className='larg'></div>
         <div className='small'></div>
         <div className='small'></div>
+        <div className='larg'></div>
         <div className='small'></div>
+        <div className='larg'></div>
+
+
       </div>
       <div className="glass">
 
@@ -38,21 +52,13 @@ function App() {
         </div>
         <Piano />
       </div>
-      <div className='small'></div>
-      <div className='small'></div>
-      <div className='small'></div>
-      <div className='small'></div>
-      <div className='small'></div>
-      <div className='larg'></div>
-      <div className='larg'></div>
-      <div className='larg'></div>
-      <div className='small'></div>
-      <div className='small'></div>
-      <div className='small'></div>
-      <div className='small'></div>
-      <div className='small'></div>
+      <div className="bubles-right">
+
+
+      </div>
 
     </div>
+
   );
 }
 
