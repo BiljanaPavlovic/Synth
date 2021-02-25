@@ -1,0 +1,101 @@
+/** @format */
+
+.small {
+  border: solid 3px #4dffff;
+  background-color: #3dc8ff;
+  background-image: url("https://www.transparenttextures.com/patterns/nice-snow.png");
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  animation-name: small-animation;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes small-animation {
+  0% {
+    background-color: #3dc8ff;
+    background-image: url("https://www.transparenttextures.com/patterns/nice-snow.png");
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: rgb(73, 73, 172);
+  }
+  75% {
+    background-color: plum;
+  }
+  100% {
+    background-color: #3dc8ff;
+    background-image: url("https://www.transparenttextures.com/patterns/nice-snow.png");
+  }
+}
+.larg {
+  border: solid 3px #4dffff;
+  background-color: #0081bd;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  position: relative;
+  animation-name: large-animation;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes large-animation {
+  0% {
+    background-color: #0081bd;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  }
+  25% {
+  }
+  50% {
+    background-color: rgb(194, 84, 228);
+  }
+  75% {
+    background-color: pink;
+    transform: rotate(180deg);
+  }
+  100% {
+    background-color: #0081bd;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  }
+}
+.small-up-div {
+  padding: 3vw;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+h1 {
+  font-size: 15vh;
+  color: #6600ff;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  position: relative;
+  animation-name: headline-animation;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes headline-animation {
+  0% {
+    color: #0081bd;
+  }
+  25% {
+    color: yellow;
+    transform: rotate(20deg);
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: purple;
+    transform: rotate(-20deg);
+  }
+  100% {
+    color: #0081bd;
+  }
+}

@@ -190,43 +190,54 @@ export default function Piano() {
         </button>
       </div>
       <div className="piano">
-        <button className="white" onClick={instrument ? toneC : toneCSynth}>
-          C
-        </button>
-        <button className="black" onClick={instrument ? toneCs : toneCsSynth}>
-          C#
-        </button>
-        <button className="white" onClick={instrument ? toneD : toneDSynth}>
-          D
-        </button>
-        <button className="black" onClick={instrument ? toneDs : toneDsSynth}>
-          D#
-        </button>
-        <button className="white" onClick={instrument ? toneE : toneESynth}>
-          E
-        </button>
-        <button className="white" onClick={instrument ? toneF : toneFSynth}>
-          F
-        </button>
-        <button className="black" onClick={instrument ? toneFs : toneFsSynth}>
-          F#
-        </button>
-        <button className="white" onClick={instrument ? toneG : toneGSynth}>
-          {" "}
-          G
-        </button>
-        <button className="black" onClick={instrument ? toneGs : toneGsSynth}>
-          G#
-        </button>
-        <button className="white" onClick={instrument ? toneA : toneASynth}>
-          A
-        </button>
-        <button className="black" onClick={instrument ? toneAs : toneAsSynth}>
-          A#
-        </button>
-        <button className="white" onClick={instrument ? toneB : toneBSynth}>
-          B
-        </button>
+        <button
+          className="white"
+          onClick={instrument ? toneC : toneCSynth}
+        ></button>
+        <button
+          className="black"
+          onClick={instrument ? toneCs : toneCsSynth}
+        ></button>
+        <button
+          className="white"
+          onClick={instrument ? toneD : toneDSynth}
+        ></button>
+        <button
+          className="black"
+          onClick={instrument ? toneDs : toneDsSynth}
+        ></button>
+        <button
+          className="white"
+          onClick={instrument ? toneE : toneESynth}
+        ></button>
+        <button
+          className="white"
+          onClick={instrument ? toneF : toneFSynth}
+        ></button>
+        <button
+          className="black"
+          onClick={instrument ? toneFs : toneFsSynth}
+        ></button>
+        <button
+          className="white"
+          onClick={instrument ? toneG : toneGSynth}
+        ></button>
+        <button
+          className="black"
+          onClick={instrument ? toneGs : toneGsSynth}
+        ></button>
+        <button
+          className="white"
+          onClick={instrument ? toneA : toneASynth}
+        ></button>
+        <button
+          className="black"
+          onClick={instrument ? toneAs : toneAsSynth}
+        ></button>
+        <button
+          className="white"
+          onClick={instrument ? toneB : toneBSynth}
+        ></button>
       </div>
     </div>
   );

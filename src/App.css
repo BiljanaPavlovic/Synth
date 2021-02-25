@@ -14,38 +14,26 @@
   margin: auto;
   padding: 30px;
   background-color: yellow;
+  box-shadow: 30px 30px orangered;
 }
-.small {
-  border: solid 3px #4dffff;
-  background-color: #3dc8ff;
-  background-image: url("https://www.transparenttextures.com/patterns/nice-snow.png");
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-}
-.larg {
-  border: solid 3px #4dffff;
-  background-color: #0081bd;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  margin: 10px;
-}
+
 img {
   height: 100px;
   width: 100px;
+  animation-name: headline-animation;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+h2 {
+  color: blueviolet;
+  font-size: 40px;
+  animation-name: headline-animation;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
 }
 
-.small-up-div {
-  padding: 3vw;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-}
-h1 {
-  font-size: 20vh;
-  color: #6600ff;
-}
 @media (max-width: 768px) {
   body {
     display: grid;
